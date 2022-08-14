@@ -8,7 +8,7 @@ void setup()
   pinMode(7, OUTPUT);	    // Porta digital 7 (led verde) como saída
   pinMode(4, OUTPUT);       // Porta digital 4 (led vermelho) como saída
   pinMode(2, INPUT);        // Porta digital 2 (sensor presença) como entrada
-  digitalWrite(4, HIGH);    // Inicia com led vermelho aceso
+  digitalWrite(4, HIGH);    // Inicia com LED vermelho aceso
 }
 
 void loop() {
@@ -18,7 +18,6 @@ void loop() {
   	digitalWrite(7, HIGH);  // Acende LED verde
     digitalWrite(4, LOW);   // Apaga LED vermelho
     tone(8,1000);		    // Buzzer acionado (frequência 1000 Hz)
-    
     Serial.println("Objeto identificado!"); // Escreve mensagem no monitor serial
   }
   else {
